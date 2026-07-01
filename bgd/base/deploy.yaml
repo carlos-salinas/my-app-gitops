@@ -17,7 +17,7 @@ spec:
         app: bgd
     spec:
       containers:
-      - image: quay.io/rhdevelopers/bgd:1.0.0
+      - image: quay.io/csalinas/my-app:4366a43e1732168fb0ea494375dbe9db53b1ae3e@sha256:3d525a394af7174aea6099970975cfd2dcc5e40b291c4df969b6e99b3876c548
         name: bgd
         env:
         - name: COLOR
