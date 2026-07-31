@@ -18,6 +18,8 @@ spec:
       containers:
       - name: bgd
         image: quay.io/csalinas/bgd:1.0.0
+        # Mutable tags need Always; IfNotPresent keeps a stale arch after retag (Exec format error).
+        imagePullPolicy: Always
         ports:
         - containerPort: 8080
           protocol: TCP
