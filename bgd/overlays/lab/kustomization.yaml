@@ -4,10 +4,10 @@ kind: Kustomization
 resources:
   - ../../base
 
-# CI (gitops-change-image) rewrites images + env-patch.yaml each PipelineRun.
+# Written by Tekton gitops-change-image — do not edit by hand during CI.
 images:
   - name: quay.io/csalinas/bgd
-    digest: sha256:b2ff09e9eabbb20341065a55d881003f246183db1b0dbbde4ed48c03e22a6856
+    digest: sha256:9e069945ae51f84c3c6c4bbe29ce59b6d70dbd1b1077644974356956372cc766
 
 patches:
   - path: env-patch.yaml

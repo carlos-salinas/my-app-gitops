@@ -10,6 +10,6 @@ spec:
         - name: bgd
           env:
             - name: BG_COLOR
-              value: "coral"
+              value: "mediumseagreen"
             - name: GIT_COMMIT
-              value: "9747070b4ad4ed0bb4d2e877ac876f746db65e0e"
+              value: "708cbbdefc2959449b56fc5bb568b842e01ebabd"
