@@ -1,0 +1,15 @@
+# Strategic-merge patch: env entries merge by name (MESSAGE / APP_VERSION stay from base).
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bgd
+spec:
+  template:
+    spec:
+      containers:
+        - name: bgd
+          env:
+            - name: BG_COLOR
+              value: "coral"
+            - name: GIT_COMMIT
+              value: "9747070b4ad4ed0bb4d2e877ac876f746db65e0e"

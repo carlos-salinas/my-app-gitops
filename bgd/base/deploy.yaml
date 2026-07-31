@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: bgd
-        image: quay.io/csalinas/bgd:9747070b4ad4ed0bb4d2e877ac876f746db65e0e@sha256:b2ff09e9eabbb20341065a55d881003f246183db1b0dbbde4ed48c03e22a6856
+        image: quay.io/csalinas/bgd:1.0.0
         # Mutable tags need Always; IfNotPresent keeps a stale arch after retag (Exec format error).
         imagePullPolicy: Always
         ports:
@@ -25,13 +25,13 @@ spec:
           protocol: TCP
         env:
         - name: BG_COLOR
-          value: "coral"
+          value: "steelblue"
         - name: MESSAGE
           value: "OpenShift Pipelines+GitOps Demo"
         - name: APP_VERSION
           value: "1.0.0"
         - name: GIT_COMMIT
-          value: "9747070b4ad4ed0bb4d2e877ac876f746db65e0e"
+          value: "1.0.0"
         resources: {}
         securityContext:
           allowPrivilegeEscalation: false
