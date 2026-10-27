@@ -7,7 +7,7 @@ resources:
 # Written by Tekton gitops-change-image — do not edit by hand during CI.
 images:
   - name: quay.io/csalinas/bgd
-    digest: sha256:9e069945ae51f84c3c6c4bbe29ce59b6d70dbd1b1077644974356956372cc766
+    digest: sha256:a42a966dcf32bc4a84530059c575cb7b07c1a97455bc57568fefeef14a9c416f
 
 patches:
   - path: env-patch.yaml
